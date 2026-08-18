@@ -1,7 +1,8 @@
-import useCalendar from "../utils/useCalendar";
+import useCalendar, { getCalendarMonth } from "../utils/useCalendar";
 
 function Calendar(){
-    const {now, thisMonth, thisYear, cells} = useCalendar();
+    let cells = getCalendarMonth(7)
+    const {now, thisMonth, thisYear} = useCalendar();
     return(
         <>
         <div>
