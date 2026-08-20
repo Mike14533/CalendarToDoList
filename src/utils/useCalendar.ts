@@ -17,6 +17,8 @@ export function addToDo(e: string){
 export function addTodoToCalendar(Todo: CalendarTodo){
     let Todos: CalendarTodo[] = []
     Todos[0] = {day: 1, month: 8, year: 2026, tasks: ["bring dog out", "make breakfast", "go to best", "btw this is a test"]}
+    Todos[1] = {day: 1, month: 8, year: 2026, tasks: ["bring dog out", "make breakfast", "go to best", "btw this is a test"]}
+    Todos[2] = {day: 1, month: 8, year: 2026, tasks: ["bring dog out", "make breakfast", "go to best", "btw this is a test"]}
 }
 export function getStart(monthNo: number){return new Date(thisYear, monthNo)}
 export function getEnd(monthNo: number){return new Date(thisYear, monthNo + 1, 0)}
