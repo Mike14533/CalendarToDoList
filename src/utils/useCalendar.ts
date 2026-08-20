@@ -9,7 +9,7 @@ interface CalendarTodo{
     year: number,
     tasks: string[]
 }
-
+export const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 export function addToDo(e: string){
     let tasks: string[] = []
     tasks[0] = e
@@ -25,6 +25,12 @@ export function getEnd(monthNo: number){return new Date(thisYear, monthNo + 1, 0
 export function getCalendarMonth(monthNo: number){
     let month = new Date(thisYear, monthNo)
      let cells = []
+    
+     let leading = 
+
+    let startIndex = 0
+
+
     
 
     for(let i = getEnd(10 - 1).getDate() + (getStart(10).getDay() - 2); i <= getEnd(10 - 1).getDate(); i++){

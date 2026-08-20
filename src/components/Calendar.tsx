@@ -1,4 +1,4 @@
-import useCalendar, { getCalendarMonth } from "../utils/useCalendar";
+import useCalendar, { getCalendarMonth, weekdays } from "../utils/useCalendar";
 
 function Calendar(){
     let cells = getCalendarMonth()
@@ -10,10 +10,14 @@ function Calendar(){
             <h1>{thisYear.toString()}</h1>
         </div>
         <div>
-            <h1>Sunday Monday Tuesday Wednesday Thursday Friday Saturday</h1>
+            <h1>{weekdays}</h1>
             {cells.map((item: number, id: number) => (
+                {let today = calendate.today
+
+                }
                 <div>
-                    <h1>{item}</h1>
+                    {today ? <h1>today</h1> : null}
+                    <h1 className = "today: blue">{item}</h1>
                     <button>add task</button>
                 </div>
             ))}
