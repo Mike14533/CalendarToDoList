@@ -1,8 +1,10 @@
 import useCalendar, { getCalendarMonth, weekdays } from "../utils/useCalendar";
 
 function Calendar(){
-    let cells = getCalendarMonth()
+
+    
     const {now, thisMonth, thisYear} = useCalendar();
+    let cells = getCalendarMonth(thisMonth)
     return(
         <>
         <div>
@@ -12,7 +14,7 @@ function Calendar(){
         <div>
             <h1>{weekdays}</h1>
             {cells.map((item: number, id: number) => (
-                {let today = calendate.today
+                {let today = now.getDate()
 
                 }
                 <div>
