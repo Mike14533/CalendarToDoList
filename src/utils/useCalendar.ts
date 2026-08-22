@@ -26,9 +26,7 @@ export function getCalendarMonth(monthNo: number){
     let month = new Date(thisYear, monthNo)
      let cells = []
     
-     let leading = 
-
-    let startIndex = 0
+    
 
 
     
