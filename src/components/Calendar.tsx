@@ -3,7 +3,7 @@ import useCalendar, { getCalendarMonth, weekdays } from "../utils/useCalendar";
 function Calendar(){
 
     
-    const {now, thisMonth, thisYear} = useCalendar();
+    const {now, thisMonth, thisYear, goNext, goPrev} = useCalendar();
     let cells = getCalendarMonth(thisMonth)
     return(
         <>
@@ -31,7 +31,8 @@ function Calendar(){
                 
             )})}
         </div>
-            
+            <button onClick = {goNext}>next</button>
+            <button onClick = {goPrev}>prev</button>
         </>
     )
 }

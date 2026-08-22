@@ -53,7 +53,7 @@ function useCalendar(){
     
 
 
-    return {now, thisYear, thisMonth,  getStart}
+    return {now, thisYear, thisMonth,  getStart, goNext, goPrev}
 }
 
 export default useCalendar;
